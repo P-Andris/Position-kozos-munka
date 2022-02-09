@@ -3,11 +3,12 @@
 }
 
 main {
+    position: relative;
+    top: 50px;
     display: grid;
     grid-template-areas: "ar ar ar ar"
                          "se se se se";
     max-width: 900px;
-    border: 1px solid black;
     margin: auto;
 }
 
@@ -15,19 +16,20 @@ header{
     position: fixed;
     width: 100%;
     margin: auto;
+    z-index: 20;
 }
 
 nav {
     z-index: 10;
     background-color: lightblue;
     height: 50px;
-    width: 99%;
+    width: 100%;
     border: 1px solid lightblue;
 }
 
 nav>ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 80%;
     grid-gap: 10px;
 }
 
@@ -38,6 +40,7 @@ nav ul{
 nav ul li {
     width: 70px;
     text-align: center;
+    margin-right: 5px;
 }
 
 nav ul li a{
@@ -50,8 +53,18 @@ nav ul li a{
 }
 
 article{
+    grid-area: ar;
     width: 100%;
     top: 0;
+    text-align: center;
+}
+
+article h1 {
+    text-align: left;
+}
+
+section {
+    grid-area: se;
 }
 
 .legordulo {
@@ -62,8 +75,24 @@ article{
     display: none;
     position: absolute;
     z-index: 20;
+    padding: 0px;
+    border: 3px solid transparent;
+}
+
+.legordulo-menu li a {
+    background-color: white;
 }
 
 .legordulo:hover .legordulo-menu {
     display: block;
+}
+
+article img {
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+section {
+    border: 1px solid black;
 }
