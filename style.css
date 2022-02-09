@@ -3,11 +3,14 @@
     box-sizing: border-box;
 }
 
-
 header{
     border: 1px solid black;
 }
 
+nav {
+    z-index: 10;
+    background-color: greenyellow;
+}
 
 nav>ul{
     display: grid;
@@ -26,13 +29,28 @@ nav ul li a{
     border: 1px solid black;
     border-radius: 5px;
     color: black;
+    display: block;
 }
 
 .fejlec {
     position: fixed;
+
 }
 
 article{
-    
+    width: 100%;
 }
 
+.legordulo {
+    position: relative
+}
+
+.legordulo-menu {
+    display: none;
+    position: absolute;
+    z-index: 20;
+}
+
+.legordulo:hover .legordulo-menu {
+    display: block;
+}
