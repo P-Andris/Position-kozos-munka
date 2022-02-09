@@ -103,9 +103,30 @@ section {
     border-radius: 5px;
     padding: 5px;
     margin: auto;
+    background-color: grey;
+}
+
+.keret {
+    z-index: 10;
 }
 
 .bezar {
     float: right;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    top: 50px;
+}
+
+.kiskep img {
+    width: 100%;
+}
+
+.megjeleno-kep img {
+    width: 100%;
+    display: none;
 }
 
