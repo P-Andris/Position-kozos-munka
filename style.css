@@ -94,5 +94,18 @@ article img {
 }
 
 section {
-    border: 1px solid black;
+    text-align: center;
 }
+
+#ablak {
+    width: 30%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+}
+
+.bezar {
+    float: right;
+}
+
